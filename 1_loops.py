@@ -51,3 +51,9 @@ total = 0
 for x in new_numbers:
     total += x
 print("total: ", total)
+
+new_list = list(range(5,26))
+sum = 0
+for number in new_list:
+    sum += number
+print("total: ", sum)
