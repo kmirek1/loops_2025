@@ -21,15 +21,24 @@ n = int(input("Enter an number:"))
 total = 0
 for i in range(1,n+1):
     total += i
-    print("The sum of numbers from 1 to", n, "is:", total)
+print("The sum of numbers from 1 to", n, "is:", total)
 
 # ### **Problem 3: Factorial Calculator
-
+#5! = 5 x 4 x 3 x 2 x 1 = 120 
+#n! = n x (n-1) ... x 2 x 1 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
 
 # *(Example: factorial of 5 is 120)
+def factorial(n):
 
+    factorial = 1
 
+    for i in range(n):
+        factorial*=i+1
+
+    return factorial
+
+print(factorial(5))
 # ### **Problem 4: Count Vowels**
 
 # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
